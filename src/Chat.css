@@ -1,0 +1,100 @@
+.chat {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chat__header {
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 15px;
+  /* min-height: 56px; */
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.chat__info {
+  flex: 1;
+  display: flex;
+}
+.chat__info > p {
+  margin-left: 10px;
+}
+.chat__header > h4 {
+  color: #3e93fd;
+}
+
+.chat__body {
+  flex: 1;
+  padding: 30px;
+  overflow-y: scroll;
+  background: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274__340.jpg")
+    no-repeat center center/cover;
+}
+.chat__body::-webkit-scrollbar {
+  display: none;
+}
+.chat__message {
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 30px;
+  display: flex;
+}
+.chat__name {
+  margin-right: 10px;
+  padding-bottom: 10px;
+  font-size: x-small;
+}
+.chat__reciever {
+  background-color: #3e93fd;
+  color: white;
+  margin-left: auto;
+}
+
+.chat__timestamp {
+  position: absolute;
+  bottom: -15px;
+  font-size: xx-small;
+  color: gray;
+  right: 0;
+}
+
+.chat__footer {
+  padding: 10px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat__inputContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.chat__inputContainer > form {
+  flex: 1;
+  display: flex;
+}
+.chat__inputContainer > form > input {
+  flex: 1;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  padding: 4px;
+}
+
+.chat__inputContainer > form > button {
+  border-radius: 90px !important;
+  background-color: #3e93fd;
+}
+.chat__send {
+  color: white !important;
+}

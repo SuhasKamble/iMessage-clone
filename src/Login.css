@@ -1,0 +1,20 @@
+.login {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.login > img {
+  object-fit: contain;
+}
+.login > button {
+  background: #3e93fd;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1.3px;
+}
+
+.login h3 {
+  color: #3e93fd;
+}
